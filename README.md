@@ -3,16 +3,23 @@
 
 To connect computers in multiple networks using Distance Vector Routing Protocol and to verify the connectivity between computers.
 # EQUIPMENTS REQUIRED:
+<img width="987" height="271" alt="Screenshot 2025-11-05 155559" src="https://github.com/user-attachments/assets/c2bb4bb7-a676-4dfd-9353-6c49f6cea974" />
+
 
 
 
 # IP ASSIGNMENT:
+<img width="1022" height="493" alt="Screenshot 2025-11-05 155721" src="https://github.com/user-attachments/assets/1aa39e6b-7547-4765-b82b-670f3c89ac92" />
+
+
 
 
 
 # NETWORK DIAGRAM:
-# PROCEDURE:
+<img width="1046" height="561" alt="image" src="https://github.com/user-attachments/assets/04f3d6b4-edba-4702-b416-202002021d7b" />
 
+# PROCEDURE:
+```
 STEP 1: Open a Packet Tracer Software.
 STEP 2: Drag two 2900 Switches, two Cisco 1800 Routers, four PC Terminals from tool barand drop it in work area.
 STEP 3: Connect all the PC Terminals and Routers through Switches as shown in the networkdiagram using CAT 6 Patch cables.
@@ -29,9 +36,9 @@ o PC2: 192.168.2.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.2.1
 o PC3: 192.168.3.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.3.1
 o PC4: 192.168.4.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
 o PC5: 192.168.4.3, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
- 
+ ```
 # PROGRAM
-
+```
 Router0 Configuration Steps
 Click Router 0 and in CLI TYPE THIS Router> enable
 Router# configure terminal Router(config)# interface FastEthernet0/0
@@ -53,6 +60,7 @@ Router(config-if)# ip address 192.168.4.1 255.255.255.0 Router(config-if)# no sh
 Router(config-if)# exit Router(config)# router rip Router(config-router)# version 2
 Router(config-router)# network 192.168.3.0
 Router(config-router)# network 192.168.4.0 Router(config-router)# exit
+```
 Steps to Check the Output:
 1.	Verify RIP Routing Table on Routers
 To check if RIP is working and the routes are learned from the other router, you need to inspect the routing table on each router.
@@ -79,6 +87,9 @@ You can also check connectivity between the PCs on different networks to ensure 
 •	Similarly, you can ping between other PCs (e.g., from PC2 to PC5) to verify network connective
  
 # OUTPUT
+<img width="1043" height="609" alt="image" src="https://github.com/user-attachments/assets/e424f680-4500-4bb0-908a-da4585b35950" />
+<img width="993" height="588" alt="image" src="https://github.com/user-attachments/assets/93d3b605-e719-4215-ad0b-ce083de736c5" />
+
 
 
 
